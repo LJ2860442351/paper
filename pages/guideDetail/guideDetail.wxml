@@ -1,0 +1,10 @@
+<!--pages/guideDetail/guideDetail.wxml-->
+<view wx:if="{{item.word_type==''&&item.word_img==''}}">
+    <view class='title'>暂无资源</view>
+</view>
+<view wx:else>
+  <view class='title'>{{item.word_type}}</view>
+  <view wx:for="{{word_img}}" >
+  <image src='http://xubeixyz123.com/LunWen/main/{{item}}' bindtap="viewBookDetail" data-index="{{index}}"></image>
+  </view>
+</view>

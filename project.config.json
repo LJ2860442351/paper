@@ -1,0 +1,79 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.2",
+	"appid": "wxf1bd4c045e60ddb2",
+	"projectname": "source_plus",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "user",
+					"pathName": "pages/user/user",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "rank",
+					"pathName": "pages/rank/rank",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "info",
+					"pathName": "pages/info/info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "register",
+					"pathName": "pages/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "guide",
+					"pathName": "pages/guide/guide",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "lend",
+					"pathName": "pages/lend/lend"
+				}
+			]
+		}
+	}
+}

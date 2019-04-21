@@ -1,0 +1,11 @@
+<view wx:for="{{guidelist}}" class='posts'>
+  <navigator url="/pages/guideDetail/youxiuInfo?id={{item.book_id}}" class='navigator'>
+    <view class="book-info">
+      <text class="lunwen_title title">论文年份：{{item.addtime
+}}</text>
+  </view>
+
+<image src='http://xubeixyz123.com/LunWen/main/{{item.book_img}}' class="book-img"></image>
+</navigator>
+
+</view>

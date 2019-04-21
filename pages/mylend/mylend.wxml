@@ -1,0 +1,153 @@
+<view wx:if="{{borrowReturn=='无待归还论文'&&lendlunwen=='暂无借书'}}">
+    <view class='title'>暂无借阅论文</view>
+  </view>
+<view wx:else>
+<view class='refresh' bindtap='refresh'>刷新</view>
+<view class='title'>我借阅的</view>
+<view class='title'>借阅者：{{consumer_unionid}}</view>
+<view wx:for="{{lended}}">
+  <view>{{lended}}</view>
+</view>
+<view wx:if="{{lendlunwen=='暂无借书'}}">
+    <view wx:if="{{borrowReturn =='无待归还论文'&&lendlunwen!=='暂无借书'}}">
+    <view>无待归还论文</view>
+  </view>
+  <view wx:else>
+    <view wx:for="{{borrowReturn}}">
+      <view class='posts'>
+        <view class="book-content">
+          <view class="book-header">
+            <view class='image-container'>
+            <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" mode='cover'></image>
+            </view>
+            <view class="book-info">
+              <text class="book-name">{{item.lunwen_title}}</text>
+              <text>作者：{{item.writer}}</text>
+              <text>上传时间：{{item.addtime}}</text>
+              <text style='color:red'>当前状态：待归还</text>
+            </view>
+          </view>
+          <view class="book-mark">
+            <view class="mark-item">{{item.lunwen_rank}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{borrowReturn =='无待归还论文'}}">
+  <view wx:if="{{borrowReturn !=='无待归还论文'&&lendlunwen=='暂无借书'}}">
+    <view wx:for="{{lendlunwen}}">
+    <view class='posts'>
+      <view class="book-content">
+        <view class="book-header">
+            <view class='image-container'>
+          <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}"mode='cover'></image>
+          </view>
+          <view class="book-info">
+            <text class="book-name">{{item.lunwen_title}}</text>
+            <text>作者：{{item.writer}}</text>
+            <text>上传时间：{{item.addtime}}</text>
+            <text class="status" wx:if="{{item.borrow_statu==0}}" style='color:green'>
+          当前状态：已借阅，待归还</text>
+            <text class="status" wx:if="{{item.borrow_statu==1}}" style='color:#81bcfe'>当前状态：待管理员审核</text>
+            <button wx:if="{{item.borrow_statu==0}}" class='returnBtn' bindtap='returnBtn' id="{{item.lunwen_id}}">归还</button>
+          </view>
+        </view>
+        <view class="book-mark">
+          <view class="mark-item">{{item.lunwen_rank}}</view>
+        </view>
+      </view>
+    </view>
+    </view>
+  </view>
+  <view wx:else>
+  <view wx:for="{{lendlunwen}}">
+    <view class='posts'>
+      <view class="book-content">
+        <view class="book-header">
+          <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}"mode='cover'></image>
+          <view class="book-info">
+            <text class="book-name">{{item.lunwen_title}}</text>
+            <text>作者：{{item.writer}}</text>
+            <text>上传时间：{{item.addtime}}</text>
+            <text class="status" wx:if="{{item.borrow_statu==0}}" style='color:green'>
+          当前状态：已借阅，待归还</text>
+            <text class="status" wx:if="{{item.borrow_statu==1}}" style='color:#81bcfe'>当前状态：待管理员审核</text>
+            <button wx:if="{{item.borrow_statu==0}}" class='returnBtn' bindtap='returnBtn' id="{{item.lunwen_id}}">归还</button>
+          </view>
+        </view>
+        <view class="book-mark">
+          <view class="mark-item">{{item.lunwen_rank}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  <view wx:for="{{borrowReturn}}" wx:if="{{borrowReturn !=='无待归还论文'}}">
+      <view class='posts'>
+        <view class="book-content">
+          <view class="book-header">
+            <view class='image-container'>
+            <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}"mode='cover'></image>
+            </view>
+            <view class="book-info">
+              <text class="book-name">{{item.lunwen_title}}</text>
+              <text>作者：{{item.writer}}</text>
+              <text>上传时间：{{item.addtime}}</text>
+              <text style='color:red'>当前状态：待归还</text>
+            </view>
+          </view>
+          <view class="book-mark">
+            <view class="mark-item">{{item.lunwen_rank}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{borrowReturn !=='无待归还论文'&&lendlunwen !=='暂无借书'}}">
+<view wx:for="{{borrowReturn}}">
+      <view class='posts'>
+        <view class="book-content">
+          <view class="book-header">
+            <view class='image-container'>
+            <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}"mode='cover'></image>
+            </view>
+            <view class="book-info">
+              <text class="book-name">{{item.lunwen_title}}</text>
+              <text>作者：{{item.writer}}</text>
+              <text>上传时间：{{item.addtime}}</text>
+              <text style='color:red'>当前状态：待归还</text>
+            </view>
+          </view>
+          <view class="book-mark">
+            <view class="mark-item">{{item.lunwen_rank}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+<view wx:for="{{lendlunwen}}">
+    <view class='posts'>
+      <view class="book-content">
+        <view class="book-header">
+          <view class='image-container'>
+          <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" mode='cover'></image>
+          </view>
+          <view class="book-info">
+            <text class="book-name">{{item.lunwen_title}}</text>
+            <text>作者：{{item.writer}}</text>
+            <text>上传时间：{{item.addtime}}</text>
+            <text class="status" wx:if="{{item.borrow_statu==0}}" style='color:green'>
+          当前状态：已借阅，待归还</text>
+            <text class="status" wx:if="{{item.borrow_statu==1}}" style='color:#81bcfe'>当前状态：待管理员审核</text>
+            <button wx:if="{{item.borrow_statu==0}}" class='returnBtn' bindtap='returnBtn' id="{{item.lunwen_id}}">归还</button>
+          </view>
+        </view>
+        <view class="book-mark">
+          <view class="mark-item">{{item.lunwen_rank}}</view>
+        </view>
+      </view>
+    </view>
+    </view>
+</view>

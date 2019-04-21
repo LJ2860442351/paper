@@ -1,0 +1,21 @@
+<!--pages/guideDetail/jingxuan.wxml-->
+<!-- <text>pages/guideDetail/jingxuan.wxml</text> -->
+<view class='posts' wx:for="{{guidelist}}" >
+  <navigator  url="/pages/show/show?id={{item.lunwen_id}}" class='navigator'>
+    <view class="book-content">
+      <view class="book-header">
+        <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" data-index="{{index}}"></image>
+        <view class="book-info">
+          <text class="book-name">{{item.lunwen_title}}</text>
+          <text>作者：{{item.writer}}</text>
+          <text>上传时间：{{item.addtime
+}}</text>
+        </view>
+      </view>
+      <view class="book-mark">
+<view class="mark-item">{{item.rank_type}}</view>
+ <view class="mark-item">精选论文</view>
+      </view>
+    </view>
+  </navigator>
+</view>

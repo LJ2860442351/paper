@@ -1,0 +1,31 @@
+<!--pages/show/show.wxml-->
+<view class='post-detail'>
+  <view class='content'>
+    <view class='title'>{{post.lunwen_title}}</view>
+    <view wx:for="{{thumb}}">
+      <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item}}" bindtap='viewBookDetail' data-index="{{index}}" wx:if="{{post.bijiao=='精选论文'}}"></image>
+       <image class="newimage" src="http://xubeixyz123.com/LunWen/main/{{item}}" bindtap='viewBookDetail' data-index="{{index}}" wx:else></image>
+    </view>
+  </view>
+  <view style='margin-top:40px;'>论文类型：{{post.lunwen_rank}}</view>
+  <!-- <view>{{post.rank_type}}</view> -->
+  <view>作者信息：{{post.writer}}</view>
+  <text style='color:#aaa;'>上传时间：{{post.addtime}}</text>
+  <view class='body'>
+    <wxparser rich-text="{{post.content}}" class="content" />
+  </view>
+</view>
+<view class="extra">
+  <view class="extra-share">
+    <image wx:if="{{collection}}" src="../../images/zaned.png" class="extra-share-img"  bindtap='toCollect' />
+    
+    <image wx:else src="../../images/zan.png" class="extra-share-img" bindtap='toCollect' />
+
+    <image wx:if="{{collected}}" src="../../images/liked.png" class="extra-share-img" catchtap="onCollectionTap" />
+     <image wx:else catchtap="onCollectionTap" src="../../images/like.png" class="extra-share-img"/>
+  </view>
+      <text class='zanNum'>{{zanNum}}</text>
+
+</view>
+
+<button class="btn" bindtap='bookTap' url="/pages/lend/lend?id={{post.lunwen_id}}">借阅</button>

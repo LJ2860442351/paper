@@ -1,0 +1,26 @@
+<view>
+  <form bindsubmit="formData">
+    <!--提交按钮  -->
+    <icon class="weui-icon-search_in-box" type="search" size="18"></icon>
+    <input type="text" bindinput='searchInput' name="id" placeholder='输入关键词' style='border:1px solid #ccc;' onblur confirm-type='search'/>
+    <button formType="submit" class="btn" >搜索</button>
+  </form>
+</view>
+<view class='showResult'>搜索结果</view>
+<view wx:if="{{re}}">
+  <navigator  wx:for="{{re}}" url="/pages/show/show?id={{item.lunwen_id}}" class="navigator">
+    <view class="book-content">
+      <view class="book-header">
+        <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" bindtap='viewBookDetail'></image>
+        <view class="book-info">
+          <text class="book-name">{{item.lunwen_title}}</text>
+          <text>作者：{{item.writer}}</text>
+          <text>上传时间：{{item.addtime}}</text>
+        </view>
+      </view>
+      <view class="book-mark">
+        <view class="mark-item">{{item.lunwen_rank}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>

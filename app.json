@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/rank/rank",
+    "pages/info/info",
+    "pages/show/show",
+    "pages/lend/lend",
+    "pages/guide/guide",
+    "pages/search/search",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/detail/detail",
+    "pages/collect/collect",
+    "pages/guideDetail/guideDetail",
+    "pages/mylend/mylend",
+    "pages/about/about",
+    "pages/guideDetail/youxiu",
+    "pages/guideDetail/youxiuInfo",
+    "pages/guideDetail/jingxuan"
+  ],
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "images/book.png",
+        "selectedIconPath": "images/book_cover.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "images/study.png",
+        "selectedIconPath": "images/study_cover.png",
+        "pagePath": "pages/guide/guide",
+        "text": "指导"
+      },
+      {
+        "iconPath": "images/menu.png",
+        "selectedIconPath": "images/menu_cover.png",
+        "pagePath": "pages/rank/rank",
+        "text": "分类"
+      },
+      {
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_cover.png",
+        "pagePath": "pages/info/info",
+        "text": "我"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b2b2b",
+    "navigationBarTitleText": "本科论文库",
+    "navigationBarTextStyle": "white",
+    "onPullDownRefresh": false,
+    "debug": false
+
+  }
+}

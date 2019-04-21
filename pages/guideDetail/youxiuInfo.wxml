@@ -1,0 +1,12 @@
+<!--pages/guideDetail/youxiuInfo.wxml-->
+<!--pages/show/show.wxml-->
+<view class='post-detail'>
+  <view class='content'>
+    <!-- <view class='title'>{{post.lunwen_title}}</view> -->
+    <!-- <image class="book-img" src="http://localhost/LunWen/main/{{post.lunwen_img}}"></image> -->
+
+    <view wx:for="{{thumb}}">
+      <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item}}" bindtap='viewBookDetail' data-index="{{index}}"></image>
+    </view>
+  </view>
+</view>

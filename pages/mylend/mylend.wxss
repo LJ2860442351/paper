@@ -1,0 +1,85 @@
+/* pages/mylend/mylend.wxss */
+.refresh{
+  width: 35px;
+  height: 20px;
+  border-radius: 30px;
+  color: white;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+  float:right;
+  background: #9b9b9b;
+}
+.title{
+  text-align: center;
+  color: #aaa;
+  font-weight: 300;
+}
+.posts{
+  border-bottom: 1px solid #aaa;
+}
+.posts .navigator{
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 30rpx;
+}
+.book-content {
+  padding: 30rpx;
+}
+.book-header {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  color: #9b9b9b;
+  margin-left: 30rpx;
+}
+
+.book-name {
+  font-size: 36rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.book-img {
+  position: relative;
+  width: 300rpx;
+  height: 350rpx;
+  background-size: 100% 100%;
+  box-shadow: -1px -1px 10rpx #bbb;
+  margin-top: 4px;
+}
+.newimage{
+  position: relative;
+  width: 120px;
+  height: 150px;
+  box-shadow: -1px -1px 10rpx #bbb;
+  margin-top: 4px;
+  /* transform: rotate(90deg); */
+}
+.book-mark {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+.mark-item {
+  font-size: 28rpx;
+  color: #000;
+  border: 2rpx solid #000;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding: 0rpx 6rpx;
+  border-radius: 8rpx;
+  margin-right: 10rpx;
+}
+.returnBtn{
+  margin-top: 10rpx;
+  width: 150rpx;
+  height: 100rpx;
+  color: white;
+  background:skyblue;
+}
+.status{
+  color:green;
+}

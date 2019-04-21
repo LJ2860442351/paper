@@ -1,0 +1,22 @@
+<view class="page">
+  <view class="page__bd" style='color:#000'>
+    <view class="weui-tab">
+      <scroll-view class="weui-navbar meal-time-list" scroll-x scroll-with-animation>
+        <block wx:for="{{rank}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}} {{curMeal===index ? 'selected-meal':'meal-time-item'}}" data-index="{{index}}" bindtap="tabClick">
+            <view class="weui-navbar__title" style='margin-left:40rpx;'>{{item.name}}</view>
+          </view>
+        </block>
+      </scroll-view>
+      <view wx:for="{{ranklist}}" data-index="index">
+        <view class="weui-tab__content" hidden="{{activeIndex != index}}">
+          <view class="page__bd" wx:for="{{item}}" >
+            <navigator url='/pages/detail/detail' bindtap='getName' data-name="{{item}}">
+              {{item}}
+            </navigator>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

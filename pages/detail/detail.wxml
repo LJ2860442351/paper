@@ -1,0 +1,23 @@
+<view wx:if="{{list=='error:找不到论文'}}">
+ <view class='title'>暂无此专业相关论文~~~</view>
+</view>
+<view class='posts' wx:else>
+  <navigator wx:for="{{list}}"  url="/pages/show/show?id={{item.lunwen_id}}" class='navigator'>
+    <view class="book-content">
+      <view class="book-header">
+        <view class='image-container'>
+        <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" bindtap='viewBookDetail' mode="cover"></image>
+        </view>
+        <view class="book-info">
+          <text class="book-name">{{item.lunwen_title}}</text>
+          <text>作者：{{item.writer}}</text>
+          <text>上传时间：{{item.addtime
+}}</text>
+        </view>
+      </view>
+      <view class="book-mark">
+        <view class="mark-item">{{item.lunwen_rank}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>

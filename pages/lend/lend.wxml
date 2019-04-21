@@ -1,0 +1,26 @@
+<view class="container">
+  <scroll-view scroll-y="true" class='page-body'>
+    <view class='name'>
+      <image src='../../images/lend.jpg'></image>
+    </view>
+
+    <view class="section">
+      <view class="book-intro">
+        <text class="book-title">借阅者</text>
+        <view class="picker">
+          {{xuehaoData}}
+        </view>
+      </view>
+
+      <view class="book-intro">
+        <text class="book-title">联系人方式(手机号)</text>
+        <view class="picker">
+          <input type='text' placeholder='请输入联系人手机号' bindinput='phoneInput' maxlength='11'></input>
+        </view>
+      </view>
+    </view>
+    <view class="btn-area">
+      <button class='btn' size="default" bindtap='lendBtn'>借阅</button>
+    </view>
+  </scroll-view>
+</view>

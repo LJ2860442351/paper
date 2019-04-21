@@ -1,0 +1,65 @@
+/* pages/colletct/collect.wxss */
+
+.posts {
+  width: 90%;
+  margin: 5% 30rpx;
+}
+
+.posts .navigator {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 30rpx;
+}
+
+.book-content {
+  padding: 30rpx;
+}
+
+.book-header {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  color: #9b9b9b;
+  margin-left: 30rpx;
+}
+
+.book-name {
+  font-size: 36rpx;
+  color: #000;
+  margin-bottom: 10rpx;
+}
+
+.book-img {
+  position: relative;
+  width: 300rpx;
+  height: 350rpx;
+  box-shadow: -1px -1px 10rpx #bbb;
+  margin-top: 4px;
+}
+
+.book-mark {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+.newimage{
+  position: relative;
+  width: 120px;
+  height: 150px;
+  box-shadow: -1px -1px 10rpx #bbb;
+  margin-top: 4px;
+  /* transform: rotate(90deg); */
+}
+.mark-item {
+  font-size: 28rpx;
+  color: #000;
+  border: 2rpx solid #000;
+  height: 36rpx;
+  line-height: 36rpx;
+  padding: 0rpx 6rpx;
+  border-radius: 8rpx;
+  margin-right: 10rpx;
+}

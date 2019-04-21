@@ -1,0 +1,64 @@
+<view class="userinfo">
+  <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  <block wx:else>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </block>
+</view>
+<view class="usermotto">
+  <text class="user-motto" wx:if="{{xuehaoData}}">{{xuehaoData}}</text>
+  <text class="user-motto" wx:else>您当前还未登录，去登录吧</text>
+</view>
+<view class="usermotto">
+  <text class="user-motto" wx:if="{{school_name}}">{{school_name}}</text>
+  <text class="user-motto" wx:else></text>
+</view>
+<view class='list-block user-menu'  wx:if="{{xuehaoData==''}}">
+  <view class='item border-botton' bindtap='loginbtn'>
+    <view class='key'>登录注册</view>
+  </view>
+</view>
+
+<view class='list-block user-menu'>
+  <view class='item border-botton' bindtap='myLend'>
+    <view class='key'>借阅论文</view>
+  </view>
+</view>
+<view class='list-block user-menu'>
+  <view class='item border-botton' bindtap='showCollect'>我的收藏</view>
+</view>
+
+<view class='list-block user-menu'>
+  <view class='item border-botton' bindtap='exchangeAccount' wx:if="{{xuehaoData!==''}}">
+    <view class='key'>切换账号</view>
+  </view>
+  <view class='item border-botton' bindtap='aboutUs'>
+    <view class='key' bindtap='miniProgramInfo'>关于小程序</view>
+  </view>
+</view>
+
+
+<view class='list-block user-menu'>
+  <view class='item border-botton'>
+
+<view class="contact-btn">
+
+  <view class='contact-list'>
+    <contact-button size='100'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='50'></contact-button>
+  </view>
+   <view class='key'>联系学校管理员</view>
+  <view class='contact-list-right'>
+    <contact-button size='100'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='100'></contact-button>
+    <contact-button size='50'></contact-button>
+    <contact-button size='50'></contact-button>    
+  </view>
+</view>
+</view>
+</view>

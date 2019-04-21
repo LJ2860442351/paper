@@ -1,0 +1,11 @@
+/* pages/guideDetail/youxiuInfo.wxss */
+.post-detail image{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 240px;
+  height: 300px;
+  margin:4% auto;
+  box-shadow: 3px 3px 3px 3px #bbb;
+  /* transform: rotate(90deg); */
+}

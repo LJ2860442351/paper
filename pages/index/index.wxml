@@ -1,0 +1,35 @@
+<view>
+<image  class='search_image' url="../pages/search/search" src='../../images/search.png' bindtap='toSearch'></image>
+</view>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150" style='height:100%'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='new-publish'>最新发布</view>
+<view class='posts'>
+  <navigator wx:for="{{list}}" url="/pages/show/show?id={{item.lunwen_id}}" class='navigator'>
+    <view class="book-content">
+      <view class="book-header">
+      <view class='image-container'>
+        <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" bindtap='viewBookDetail' mode="cover" wx:if="{{item.biaoji=='精选论文'}}"></image>
+        <image class="book-img" src="http://xubeixyz123.com/LunWen/main/{{item.lunwen_img}}" bindtap='viewBookDetail' mode="cover" wx:else></image>
+        </view>
+        <view class="book-info">
+          <text class="book-name">{{item.lunwen_title}}</text>
+          <text>作者：{{item.writer}}</text>
+          <text>上传时间：{{item.addtime
+}}</text>
+        </view>
+      </view>
+      <view class="book-mark">
+        <!-- <view class="mark-item">{{item.rank_type}}</view> -->
+        <view class="mark-item">{{item.lunwen_rank}}</view>
+      </view>
+    </view>
+  </navigator>
+</view>
+

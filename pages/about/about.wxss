@@ -1,0 +1,19 @@
+/* pages/ about/about.wxss */
+page{
+background:url('http://www.liujianfly.com/game/about.jpeg')no-repeat;
+background-size: 100% 100%;
+}
+.mark-item {
+  font-size: 40rpx;
+  color: #000;
+  border: 2rpx solid pink;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding: 0rpx 6rpx;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+}
+
+.content {
+  text-indent: 40rpx;
+}

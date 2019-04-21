@@ -1,0 +1,13 @@
+<!--pages/ about/about.wxml-->
+<view class='title'>关于小程序</view>
+
+<text class='mark-item'>    开发背景：</text>
+<view class='content'>随着APP市场的饱和，超大型的APP已经粘合了用户，开发新的APP很难在市场生存，而小程序在微信端的风生水起，使得留住用户变得不再那么艰难，而基于微信小程序的本科生毕业论文资源平台很难找到，这给本项目带来了一定的机遇。
+</view>
+<text class='mark-item'>    项目功能：</text>
+<view class='content'>用户通过该小程序，可以阅读优秀的本科生论文，平台展示了本科生优秀论文完整版、毕业论文缩编版，实现了线下毕业论文借阅，毕业论文线上收藏，毕业论文格式规范指导，答辩技巧指导等功能。而小程序基于微信端，使得用户交互变得更加便捷，高效，人机交互友好。
+</view>
+<text class='mark-item'>    项目宗旨：</text>
+<view class='content'>1、为当代学生提供优质的毕业论文资源，为学生早就业，提前毕业，提供一个优秀的服务型平台。</view>
+<view class='content'> 2、解决当代本科大学生毕业难、答辩难各大难题，使得撰写毕业论文不再困难</view>
+<view class='content'>3、解决毕业论文资源积压过久的问题，提倡资源化管理平台。 ​</view>

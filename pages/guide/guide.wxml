@@ -1,0 +1,29 @@
+<!--pages/guide/guide.wxml-->
+<view class="content">
+  <view>
+    <navigator url='../../pages/guideDetail/guideDetail' data-name="格式" bindtap="Handle">
+      <text class='title'>毕业论文格式</text>
+      <image src='../../images/geshi.png' ></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url='../../pages/guideDetail/guideDetail' bindtap="Handle" data-name='答辩'>
+      <text class='title'>答辩</text>
+      <image src='../../images/dabian.png'></image>
+    </navigator>
+  </view>
+</view>
+<view class="content">
+  <view>
+    <navigator url='../../pages/guideDetail/youxiu' data-name="优秀论文汇编" bindtap="Handle">
+      <text class='title'>优秀论文汇编</text>
+      <image src='../../images/youxiu.png'></image>
+    </navigator>
+  </view>
+  <view>
+    <navigator url='../../pages/guideDetail/jingxuan' data-name="精选论文" bindtap="Handle">
+      <text class='title'>精选论文</text>
+      <image src='../../images/jingxuan.png'></image>
+    </navigator>
+  </view>
+</view>

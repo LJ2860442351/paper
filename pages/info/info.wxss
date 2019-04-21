@@ -1,0 +1,151 @@
+/* pages/info/info.wxss */
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  font-size: 26rpx;
+  color: #aaa;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.list-block{
+  margin: 20rpx 0rpx;
+  padding: 20rpx;
+  font-size: 1em;
+  font-weight: 300;
+  color: #566573;
+}
+.list-block .item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #EAECEE;
+  padding: 20rpx 0;
+  margin: 0 20rpx;
+}
+.user-info{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
+}
+.user-info .info{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin-left: 20rpx;
+  justify-content: space-around;
+  align-content:space-around;
+}
+.user-info .info text{
+  letter-spacing:2rpx;
+}
+.user-info .info .name{
+  font-size: 1.2em;
+}
+.user-info .info .i{
+  font-size:0.9em;
+}
+.user-info image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+  margin: 0 20rpx;
+}
+
+.item.no-border-botton{
+  border-bottom: 0;
+}
+
+.list-block .item .value{
+  flex-grow: 1;
+  text-align: right;
+}
+.list-block .item .dot{
+  position: relative;
+  top: -15rpx;
+  left: 10rpx;
+  display: inline-block;
+  width: 35rpx;
+  height: 35rpx;
+  font-size: 0.5em;
+  line-height: 35rpx;
+  text-align: center;
+  color: white;
+  border-radius: 100%;
+  background-color: #FF0000;
+  overflow: hidden;
+  font-weight: 500;
+}
+
+
+
+.contact-btn {
+ 
+/* height: 80rpx; */
+ 
+/* margin: 80rpx 0; */
+ 
+position: relative;
+ 
+display:flex;
+ 
+align-items:center;
+ 
+justify-content:center;
+  
+}
+ .contact-list-right{
+   position: absolute;
+  float: right;
+  position: absolute;
+ 
+top: 0;
+ 
+left: 120px;
+ 
+width: 200px;
+ 
+height: 80rpx;
+ 
+z-index: 150;
+ 
+overflow: hidden;
+ 
+opacity: 0;
+ }
+.contact-list {
+ 
+position: absolute;
+ 
+top: 0;
+ 
+left: 0;
+ 
+width: 100%;
+ 
+height: 80rpx;
+ 
+z-index: 100;
+ 
+overflow: hidden;
+ 
+opacity: 0;
+ 
+}

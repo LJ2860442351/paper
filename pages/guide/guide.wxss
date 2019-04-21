@@ -1,0 +1,25 @@
+/* pages/guide/guide.wxss */
+page{
+background-size: 100%;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+}
+.content .title{
+  font-size: 26rpx;
+  color: #aaa;
+}
+.content view{
+  text-align: center;
+  margin-left: 5%;
+  width:40%;
+  height:400rpx;
+}
+.content view image{
+  width: 90%;
+  height: 300rpx;
+  box-shadow: 3px 3px 10rpx #bbb;
+
+}

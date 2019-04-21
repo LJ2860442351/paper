@@ -1,0 +1,13 @@
+/* pages/guideDetail/guideDetail.wxss */
+.title{
+  text-align: center;
+}
+image{
+ display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 80%;
+  height: 800rpx;
+  margin:4% auto;
+  box-shadow: 3px 3px 3px 3px #bbb;
+}
